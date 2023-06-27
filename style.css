@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(images/Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+}
+
+#logo {
+    background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+    width: 400px;
+    height: 700px;
+    display: flex;
+}
+
+#odin_face{
+    width: 150px;
+    height: 200px;
+}
