@@ -10,46 +10,58 @@
 
 <body>
     <div id="logo">
-        <img src="images/odin-lined.png" alt="odin_logo" id="odin_face"> 
-        <span id="odin_logo_name">ODIN</span>
+        <div id="logo_background">
+            <img src="images/odin-lined.png" alt="odin_logo" id="odin_face">
+            <span id="odin_logo_name">ODIN</span>
+        </div>
     </div>
     <div id="main">
-        <div class="main_grey">
-            <h2 id="para1">This is not a real online service! You know you need something like this in
-            your life to help you realize your deepest dreams. Sign up now to get started.
+        <forms id="main_area">
+            <h2 class="outside_header">This is not a real online service! You know you need something like this in
+                your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
             </h2>
-            <h2 id="para2">You know you want to.</h2>
-        </div>
-        <div class="main_white">
-            <h2>Let's do this!</h2>
-            <forms>
-                <div id="username_div">
-                    <label for="first_name">FIRST NAME</label>
-                    <input type="text" name="first-name" id="first_name">
+            <h2 class="outside_header">You know you want to.</h2>
+            <div id="input_area">
+                <h2 id="input_header">Let's do this!</h2>
+                <div>
+                    <div class="input_divs">
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" name="first-name" id="first_name" required
+                        placeholder="Thor">
+                    </div>
+                    <div class="input_divs">
+                        <label for="">LAST NAME</label>
+                        <input type="text" name="last-name" id="last_name" required
+                        placeholder="Odinson">
+                    </div>
                 </div>
                 <div>
-                    <label for="">LAST NAME</label>
-                    <input type="text" name="last-name" id="last_name">
-                </div>
-                <div id="email_phone_div">
-                    <label for="e_mail">EMAIL</label>
-                    <input type="email" name="e-mail" id="e_mail">
-                </div>
-                <div>
-                    <label for="phone_number">PHONE NUMBER</label>
-                    <input type="text" name="phone-number" id="phone_number"
-                    pattern="/\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/">
-                </div>
-                <div id="password_div">
-                    <label for="password">PASSWORD</label>
-                    <input type="text" name="password" id="password">
+                    <div class="input_divs">
+                        <label for="e_mail">EMAIL</label>
+                        <input type="email" name="e-mail" id="e_mail" required>
+                    </div>
+                    <div class="input_divs">
+                        <label for="phone_number">PHONE NUMBER</label>
+                        <input type="text" name="phone-number" id="phone_number required"
+                            pattern="/\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/">
+                    </div>
                 </div>
                 <div>
-                    <label for="confirm_password">CONFIRM PASSWORD</label>
-                    <input type="text" name="confirm-password" id="confirm_password"></div>
-            </forms>
-        </div>
-    </div>
+                    <div class="input_divs">
+                        <label for="password_id">PASSWORD</label>
+                        <input type="text" name="password" id="password_id">
+                    </div>
+                    <div class="input_divs">
+                        <label for="confirm_password">CONFIRM PASSWORD</label>
+                        <input type="text" name="confirm-password" id="confirm_password">
+                    </div>
+                </div>
+            </div>
+            <div id="buttonSignIn_div">
+                <button type="submit" id="submit_button"><b>Create Account</b></button>
+                <a href="#">Already have an account? <span id="login"><b>Log in</b></span></a>
+            </div>
+        </forms>
 </body>
 
 </html>
